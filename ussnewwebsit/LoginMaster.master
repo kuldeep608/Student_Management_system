@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="LoginMaster.master.cs" Inherits="LoginMaster" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <p>
+        &nbsp;</p>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" Runat="Server">
+    <p style="background-color: #00FFFF">
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <asp:Label ID="Label2" runat="server" Font-Bold="True" style="z-index: 1; left: 607px; top: 324px; position: absolute" Text="User Id"></asp:Label>
+    <br />
+    <br />
+    <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="X-Large" style="z-index: 1; left: 748px; top: 222px; position: absolute" Text="Login From" Font-Underline="True"></asp:Label>
+    <br />
+    <br />
+    <br />
+    <br />
+    <asp:TextBox ID="txt_pwd" runat="server" style="z-index: 1; left: 748px; top: 392px; position: absolute"></asp:TextBox>
+    &nbsp;<br />
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txt_userid" ErrorMessage="Invalid User Id" ForeColor="Red" style="z-index: 1; left: 924px; top: 321px; position: absolute"></asp:RequiredFieldValidator>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txt_pwd" ErrorMessage="Invalid Password" ForeColor="Red" style="z-index: 1; left: 920px; top: 390px; position: absolute"></asp:RequiredFieldValidator>
+    <br />
+    <asp:Label ID="Label3" runat="server" Font-Bold="True" style="z-index: 1; left: 607px; top: 396px; position: absolute" Text="Password"></asp:Label>
+    <asp:TextBox ID="txt_userid" runat="server" style="z-index: 1; left: 746px; top: 319px; position: absolute"></asp:TextBox>
+    <asp:LinkButton ID="LinkButton2" runat="server" style="z-index: 1; left: 772px; top: 492px; position: absolute">Ragister</asp:LinkButton>
+    <br />
+    <br />
+    <asp:LinkButton ID="LinkButton1" runat="server" style="z-index: 1; left: 646px; top: 490px; position: absolute" OnClick="LinkButton1_Click">Sign In</asp:LinkButton>
+    <br />
+    <br />
+    <br />
+    <br />
+</p>
+</asp:Content>
+
